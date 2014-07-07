@@ -13,6 +13,7 @@ body {
 
 * {
   font-family: Tahoma;
+  font-size: 20px;
   background-color: black;
   color: grey;
   text-align: justify;
@@ -36,7 +37,6 @@ article {
 }
 
 p {
-  font-size: 20px;
   margin: 00px 00px 30px 00px;
 }
 
