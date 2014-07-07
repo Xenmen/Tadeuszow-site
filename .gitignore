@@ -1,0 +1,66 @@
+#################
+## Custom
+#################
+
+# Gimp project files (If anyone ever needs to actually upload these, I'll archive them first)
+*.xcf
+
+# Unstable pages & files
+testing/
+
+# Locally installed Nodejs modules for testing
+node_modules/
+
+# Misc that may be in use later
+tmp/
+*.tmp
+*.bak
+
+#############
+## Windows detritus
+#############
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Mac crap
+.DS_Store
+
+
+#############
+## Python
+#############
+
+*.py[co]
+
+# Packages
+*.egg
+*.egg-info
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+
+#Translations
+*.mo
+
+#Mr Developer
+.mr.developer.cfg

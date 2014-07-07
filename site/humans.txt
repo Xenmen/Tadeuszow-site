@@ -1,0 +1,17 @@
+# iwannabecool.ca/
+# "An education that is paid for is worse than no education at all." - Socrates.
+
+# TEAM
+
+    Daniel Tadeuszow -- @xenmen
+
+# THANKS
+
+    Donald Knuth --
+
+# TECHNOLOGY COLOPHON
+
+    Nodejs, HTML5, CSS3, HTML5 Boilerplate
+
+    # Source: http://nodejs.org/
+    # Source: https://github.com/h5bp/html5boilerplate.com

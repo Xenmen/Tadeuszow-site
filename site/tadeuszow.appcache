@@ -1,0 +1,26 @@
+CACHE MANIFEST
+# 2014-07-03:v0.1.0
+
+/GoodTradition.css
+/js/*
+
+CACHE:
+/animated_favicon1.gif
+/images/*
+
+/daniel/*
+
+
+NETWORK:
+#something that visitors would *need* to be online for
+#presently there is no such need
+
+# static.html will be served if main.py is inaccessible
+# offline.jpg will be served in place of all images in images/large/
+# offline.html will be served in place of all other .html files
+FALLBACK:
+#/main.py /static.html
+#images/large/ images/offline.jpg
+
+#example code supplied by:
+#http://www.html5rocks.com/en/tutorials/appcache/beginner/
