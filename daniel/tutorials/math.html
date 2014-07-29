@@ -1,0 +1,33 @@
+<html manifest="tadeuszow.appcache">
+	
+	<head data-gwd-animation-mode="quickMode">
+		<title>Daniel Tadeuszow.com - Math Tutorial</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="generator" content="Google Web Designer 1.0.2.1210">
+		
+		<!-- Stylin -->
+		<link rel="stylesheet" href="/GoodTradition.css">
+		<script type="text/javascript" src="/daniel/js/dan_template.js"></script>
+		<!-- Still Stylin -->
+		
+		<style type="text/css">
+		</style>
+	</head>
+
+	<body>
+		<div id="header" ></div>
+		
+		<article id="article">
+			<p >Recently in #phosiq, on Freenode, I had a conversation about factorial and combinatorial math. It's a bit tricky to grasp, so I'm going to leave a tutorial here about what we learned. This will be a really fast overview to save time, such that additional information can be looked up at leasure.</p>
+			<p >If you want to know the total possible passwords using just numerals (0123456789), with an exact length of 8, you would take the total possible numbers for each character of the password, and multiply them together. Since the possible options for each character in the password is the same, 10, we can just take the number of possibilities for one character to the power of the length of the password, 8. So, 10^8. That is, 10 * 10 * 10 * 10 * 10 * 10. Easy!</p>
+			<p >However, what if we had books we wanted to arrange on a bookshelf. We have 20 books, they are all the same size, and a nice big shelf with just enough room for all of the books. How many different ways can we arrange the books? We do the exact same thing as before, except, each position has one less option than the one before it. Here we use factorial math! So, the total possible combinations is !20. That is, 20 * 19 * 18 * 17... * 3 * 2 * 1. Also easy!</p>
+			<p >But wait! What if the bookshelf is too small, and can only hold 15 books? Well, we still do the same thing. The total possible options for the first position is 20. We could put any of the 20 books there. For the next position, we could put any of the remaining 19 books there. We continue doing this, and multiply the possible states for each position together. However, after the 15th position, we run out of space. In long form, this is 20 * 19 * 18 * 17 * 16 * 15 * 14 * 13 * 12 * 11 * 10 * 9 * 8 * 7 * 6. Notice how this is written almost the same as the last answer, but minus !5? So, we can write !20 - !5 as the shorthand answer. Still easy!</p>
+			
+			<div id="footer" ></div>
+		</article>
+		
+		
+		<script type="text/javascript">init_template();</script>
+	</body>
+</html>
+
