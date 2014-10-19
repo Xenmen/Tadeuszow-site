@@ -21,6 +21,7 @@ function init_template()
 			<a href='/index.html'>Daniel's Homepage</a><br>\
 			<a href='/ambitions.html'>Ambitions</a><br>\
 			<a href='/resume.html'>Resume</a><br>\
+			<a href='/music/index.html'>Music</a><br>\
 			<a href='/tutorials/index.html'>Dan's Tutorials</a><br>\
 			<a href='/projects/index.html'>Dan's Projects</a><br>\
 			<a href='/html5/index.html'>HTML 5</a><br>\
