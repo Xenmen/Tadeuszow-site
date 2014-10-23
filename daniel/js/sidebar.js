@@ -23,11 +23,14 @@ function init_template()
 			<a href='/resume.html'>Resume</a><br>\
 			<a href='/music/index.html'>Music</a><br>\
 			<a href='/tutorials/index.html'>Dan's Tutorials</a><br>\
+			<a href='/tutorials/minemod.html'> Minecraft Modpack Tutorial</a><br>\
+			<a href='/tutorials/emulation.html'> Game Emulation Tutorial</a><br>\
 			<a href='/projects/index.html'>Dan's Projects</a><br>\
 			<a href='/html5/index.html'>HTML 5</a><br>\
-			<a href='/projects/autoagro.html'>Automated Agriculture</a><br>\
-			<a href='/projects/libreware.html'>Freedom in Computing</a><br>\
-			<a href='/projects/thissite.html'>About This Website</a><br>";
+			<a href='/projects/boatdev.html'> Submersible Housing</a><br>\
+			<a href='/projects/autoagro.html'> Automated Agriculture</a><br>\
+			<a href='/projects/libreware.html'> Freedom in Computing</a><br>\
+			<a href='/projects/thissite.html'> About This Website</a><br>";
 	//TODO: generate from sitemap.xml
 	
 	//
