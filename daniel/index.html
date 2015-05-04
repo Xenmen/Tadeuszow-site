@@ -1,44 +1,96 @@
 <!DOCTYPE html>
-<html manifest="/daniel.appcache">
-	<head data-gwd-animation-mode="quickMode">
-		<title>Daniel.Tadeuszow.com</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="generator" content="Google Web Designer 1.0.2.1210">
-		
-		<meta id="sidebar_link" content="Daniel's root page">
-		<meta id="corner_image" content="/images/corner/stubborn.png">
-		<meta id="corner_message" content="Don't be stubborn, be compatible.">
-		<meta id="priority" content="0.5">
-		
-		<!-- Stylin -->
-		<link rel="stylesheet" href="http://Tadeuszow.com/GoodTradition.css">
-		<script type="text/javascript" src="/js/sidebar.js"></script>
-		<!-- Still Stylin -->
-		
-		<style type="text/css">
-		</style>
-	</head>
-	<body>
-		<div id="header" ></div>
-		<noscript>
-			<a href="/js/sidebar.js"><img src="/images/noscript.png"></img></a>
-		</noscript>
-		
-		<article id="article">
-			<p>This is the homepage of Daniel Tadeuszow, a recently situated resident of Victoria, BC. It is being built, bit by bit, in a manner similar to Dr Frankenstein's monster, so between paragraphs there may be sudden breaks/leaps in thought. This is a transitional condition, as I am building the site in my spare time, and must temporarily place speed over polish. Anyways, I hope you find lots of useful information, and sapient art!</p>
-			<p>Daniel's main objectives in life are reduction in recurring life costs, culminating in projects to address these three topics: <a href="/projects/boatdev.html">Housing Costs</a>, <a href="/projects/autoagro.html">Food Costs</a>, and <a href="/projects/libreware.html">Information Costs</a>. Presently, the amount of information gathered on these topics is colossal, and not yet organized for easy reading. This will be addressed as these projects progress, reducing the time Daniel needs to work to provide his basic necessities, freeing up more time to document the path taken so that you may use and improve that information. If you have any information you feel would be useful to these projects, please consider sending Daniel an <a href="mailto:dtadeuszow@gmail.com">email</a>, or modifying the website yourself and making a 'pull request' on <a href="https://github.com/Xenmen/Tadeuszow-site">github</a>.</p>
-			<img src="http://static.fjcdn.com/pictures/Wise+words_fd52b1_4770056.jpg"></img>
-			<br>
-			<p>Very soon, Daniel will be offering in-home computer servicing in the Victoria area, and pricing will be listed on a page linked from here.</p>
-			<br>
-			<p>Daniel's background in technology is very varied. At the age of two, Daniel began using the family Atari ST to play a train simulation game. At age 20, Daniel was designing his own Nintendo DS software. In the years between, many experiences with machines and software of all kinds, and in the years since (Daniel is 23 at the time of writing this page), he has focused on web technology almost exclusively. This website is hand-crafted HTML5/Javascript, with the intention of gradually optimizing it. Additional side projects using Unity3D, Python and NodeJS are underway, and tutorials will be available as this software is made available.</p>
-			<br>
-			<p>In the meantime, please consider reading/watching some of the linked content below. <a href="http://www.stager.org/articles/twentythings.pdf">Here</a> is a PDF document from the MIT Artificial Intelligence Laboratory, circa 1971, on the topic of computers and education, and <a href="http://www.chonday.com/Videos/1wtiterautomaton.mp4">here</a> is a video on an automaton built in 1770 that could write tangible letters with a fountain pen.</p>
-			<iframe width="480" height="360" src="https://www.youtube-nocookie.com/embed/TRCQmNMOqUY" frameborder="0" allowfullscreen></iframe>
-			
-			<div id="footer" ></div>
-		</article>
-		
-		<script type="text/javascript">init_template();</script>
-	</body>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Daniel.Tadeuszow.com</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="GoodTradition.css">
+</head>
+<body>
+
+	<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+
+
+<div id="main_page" ng-init="links = [
+	{name:'Family Homepage', url:'http://tadeuszow.com/index.html'},
+	{name:'Daniel\'s Homepage', url:'#/home'},
+	{name:'Ambitions', url:'#/ambitions'},
+	{name:'Resume', url:'#/resume'},
+	{name:'Projects', url:'#/projects', subgroup:[
+		{name:'Submersible Housing', url:'boatdev'},
+		{name:'Automated Agriculture', url:'autoagro'},
+		{name:'Freedom in Computing', url:'libreware'},
+		{name:'Mass Art Archiver', url:'bamboodl'},
+		{name:'About This Website', url:'thissite'}
+	]},
+	{name:'Music', url:'#/music', subgroup:[
+		{name:'Ableton', url:'ableton'}
+	]},
+	{name:'Tutorials', url:'#/tutorials', subgroup:[
+		{name:'Minecraft Modpack Tutorial', url:'minemod'},
+		{name:'Game Emulation Tutorial', url:'emulation'}
+	]},
+	{name:'IRC', url:'#/irc'}
+];
+
+url_boatdev=links[4].url +'/'+ links[4].subgroup[0].url;
+url_autoagro=links[4].url +'/'+ links[4].subgroup[1].url;
+url_libreware=links[4].url +'/'+ links[4].subgroup[2].url;
+url_thissite=links[4].url +'/'+ links[4].subgroup[4].url;
+">
+
+	<div id='sidebar'>
+
+		<img id='sidebar-image' ng-src="/images/corner/stubborn.png" alt=" ~There was an image here, it's gone now~ " />
+		<!--
+		<p id='sidebar-text'>{{corner_text}}</p>
+		-->
+
+		<div class='sidebar-links'>
+
+		<div class="animate-repeat" ng-repeat="group in links" style="margin: 0px;">
+
+			<a ng-href="{{group.url}}">{{group.name}}</a><br>
+
+		    <div class="animate-repeat" ng-repeat="subgroup in group.subgroup">
+		      <a ng-href="{{group.url}}/{{subgroup.url}}">{{subgroup.name}}</a><br>
+		    </div>
+
+		</div>
+
+		<!--
+		<ul class="menu">
+			<li><a href="#/view1">view1</a></li>
+			<li><a href="#/view2">view2</a></li>
+		</ul>
+		-->
+		</div>
+		<br>
+	</div>
+	
+	<article id="article">
+		<div ng-view></div>
+	</article>
+</div>
+
+	<br><br><br>
+	<noscript><a href="https://github.com/Xenmen/Tadeuszow-sit" style="text-align: center;"><img src="/images/noscript.png"></img></a></noscript>
+	<footer class="text-center" style="text-align: center;"> &copy; Copyright 2012 - 2015 Daniel Tadeuszow</footer>
+
+
+
+	<!-- In production use:
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+	-->
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.min.js"></script>
+	<script src="app.js"></script>
+</body>
 </html>

@@ -1,59 +1,30 @@
-<!DOCTYPE html>
-<html manifest="/daniel.appcache">
-	<head data-gwd-animation-mode="quickMode">
-		<title>Daniel.Tadeuszow.com</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="generator" content="Google Web Designer 1.0.2.1210">
-		
-		<meta id="sidebar_link" content="Daniel's root page">
-		<meta id="corner_image" content="/images/corner/stubborn.png">
-		<meta id="corner_message" content="Don't be stubborn, be compatible.">
-		<meta id="priority" content="0.5">
-		
-		<!-- Stylin -->
-		<link rel="stylesheet" href="http://Tadeuszow.com/GoodTradition.css">
-		<script type="text/javascript" src="/js/sidebar.js"></script>
-		<!-- Still Stylin -->
-		
-		<style type="text/css">
-		</style>
-	</head>
 
-	<body>
-		<div id="header" ></div>
-		
-		<article id="article">
-			<p>Oh boy, you're in for it now!</p>
-			
-			<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3996354775/size=large/tracklist=false/artwork=small/transparent=true/" seamless>
+<title>Daniel.Tadeuszow.com</title>
+
+<meta id="corner_message" content="Don't be stubborn, be compatible.">
+
+<p>Oh boy, you're in for it now!</p>
+
+<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3996354775/size=large/tracklist=false/artwork=small/transparent=true/" seamless>
 <a href="http://cryochamber.bandcamp.com/album/cthulhu">Cthulhu by Cryo Chamber Collaboration</a>
 </iframe>
-			
-			<p>Okay, so you want to play an old minecraft modpack from the 1.4.2 days... or 1.6.x... Or maybe much earlier. Well, you can do that with the new launcher, juggling multiple versions without having to cut and paste folders around! It's still a slight pain to setup though. That's what this guide is for, to mark each unintuitive step you need to take. I'll be using Kingsquee's Raidcraft pack as an example.<br>
-			1.) Install the new launcher. This should be obvious, but just in-case you want to share this guide with your retarded cousin in Ecuador, this is an official required step.<br>
-			2.) In ".minecraft/versions/", note that there are folders for different binary versions of Minecraft. If you use Forge for mods, then the Forge modified version must occupy its own folder. Try installing a new version of forge now if you'd like, and watch what changes here! A new folder will be created, and inside it a jar and json file.<br>
-			Create your own subfolder in the 'versions' now, named after your modpack. I now have ".minecraft/versions/1.5.2_Raidcraft/". Inside of that, I put the Raidcraft version of the Minecrat jar (In the modpack, it'll be at ".minecraft/bin/minecraft.jar" or so). You should use the same name the folder has for the jar file, so ".minecraft/versions/1.5.2_Raidcraft/1.5.2_Raidcraft.jar". Next, copy one of the json files from another subfolder, <em>ideally the vanilla version of the minecraft binary your modpack uses (in this case 1.5.2)</em>, paste it here, and rename it to match your subfolder name. I have ".minecraft/versions/1.5.2_Raidcraft/1.5.2_Raidcraft.json".<br>
-			So, inside ".minecraft/versions/" I have a folder called "1.5.2_Raidcraft", and inside of it, my old binary for Raidcraft renamed to "1.5.2_Raidcraft.jar", and another file called "1.5.2_Raidcraft.json". You're doing well so far!<br>
-			If you are not in fact doing well, please stop following this guide and go see a doctor.<br>
-			3.) Assuming you don't have Ebola, open up "1.5.2_Raidcraft.json" in a text editor. Be amazed! There's a lot of stuff in here you couldn't care less about! You'll notice a lot of settings that are specific to the minecrat version, from the folder that you copied this json file from.<br>
-			All you need to do is change the 'id' value. Right now I have "1.5.2", so I'm going to change it to "1.5.2_Raidcraft".<br>
-			This step is done! Wow, that's the hardest part so far. Go get a lemonade if you're thirsty.<br>
-			4.) Once you've had your drink and bathroom break, open ".minecraft/launcher_profiles.json" in your text editor. Notice all that stuff under profiles? Duplicate one of the codeblocks there, and set "lastVersionId" to match the ID you used in the other json file. I'll put "1.5.2_Raidcraft". You should put the same for the little string that opens the code block, not the value for "name", the thing that comes JUST before that.<br>
-			Now, set the name value to whatever you want. I'll just put "Raidcraft Classic" there.<br>
-			There's one last important thing we need to set... "gameDir"! Note the double backslashes there? That's important. Just remember that for now.<br>
-			Your modpack should come with a ".minecraft" folder inside, or equivalent. You should know enough about ".minecraft/" to know it contain all the assets, libraries, saves, and 'game stuff' Minecraft uses. The catch here, is the folder in the modpack may have all of the game assets, or only the modded assets. Lets assume your modpack has all the assets it needs to run. Put the mod's version of ".minecraft/" as a subfolder of your current, new ".minecraft/". I have ".minecraft/1.5.2_Raidcraft/".<br>
-			So, Now that you've done that, copy the path to that folder. If you're on windows, it'll be something like this:<br>
-			"C:\Users\&lt;user&gt;\AppData\Roaming\.minecraft\1.5.2_Raidcraft_Classic"<br>
-			Notice how those are single slashes? Yeah, you'll want to change them to be double. If you're a Linux user, then I expect you'll figure out the differences easily enough.<br>
-			<br>
-			Done) That's right, you're done now! That wasn't so bad was it? Now you run the launcher and see if you messed up or not! Once the launcher is open, look in the bottom left corner and click on the version to change it. If you see "Raidcraft Classic", or whatever you put as the modpack name in "launcher_profiles.json", then you didn't mess up completely! Select it, and launch your modpack! If it runs, then good job! Go get another lemonade.<br>
-			</p>
-			
-			<div id="footer" ></div>
-		</article>
-		
-		
-		<script type="text/javascript">init_template();</script>
-	</body>
-</html>
 
+<p>Okay, so you want to play an old minecraft modpack from the 1.4.2 days... or 1.6.x... Or maybe much earlier. Well, you can do that with the new launcher, juggling multiple versions without having to cut and paste folders around! It's still a slight pain to setup though. That's what this guide is for, to mark each unintuitive step you need to take. I'll be using Kingsquee's Raidcraft pack as an example.<br>
+1.) Install the new launcher. This should be obvious, but just in-case you want to share this guide with your retarded cousin in Ecuador, this is an official required step.<br>
+2.) In ".minecraft/versions/", note that there are folders for different binary versions of Minecraft. If you use Forge for mods, then the Forge modified version must occupy its own folder. Try installing a new version of forge now if you'd like, and watch what changes here! A new folder will be created, and inside it a jar and json file.<br>
+Create your own subfolder in the 'versions' now, named after your modpack. I now have ".minecraft/versions/1.5.2_Raidcraft/". Inside of that, I put the Raidcraft version of the Minecrat jar (In the modpack, it'll be at ".minecraft/bin/minecraft.jar" or so). You should use the same name the folder has for the jar file, so ".minecraft/versions/1.5.2_Raidcraft/1.5.2_Raidcraft.jar". Next, copy one of the json files from another subfolder, <em>ideally the vanilla version of the minecraft binary your modpack uses (in this case 1.5.2)</em>, paste it here, and rename it to match your subfolder name. I have ".minecraft/versions/1.5.2_Raidcraft/1.5.2_Raidcraft.json".<br>
+So, inside ".minecraft/versions/" I have a folder called "1.5.2_Raidcraft", and inside of it, my old binary for Raidcraft renamed to "1.5.2_Raidcraft.jar", and another file called "1.5.2_Raidcraft.json". You're doing well so far!<br>
+If you are not in fact doing well, please stop following this guide and go see a doctor.<br>
+3.) Assuming you don't have Ebola, open up "1.5.2_Raidcraft.json" in a text editor. Be amazed! There's a lot of stuff in here you couldn't care less about! You'll notice a lot of settings that are specific to the minecrat version, from the folder that you copied this json file from.<br>
+All you need to do is change the 'id' value. Right now I have "1.5.2", so I'm going to change it to "1.5.2_Raidcraft".<br>
+This step is done! Wow, that's the hardest part so far. Go get a lemonade if you're thirsty.<br>
+4.) Once you've had your drink and bathroom break, open ".minecraft/launcher_profiles.json" in your text editor. Notice all that stuff under profiles? Duplicate one of the codeblocks there, and set "lastVersionId" to match the ID you used in the other json file. I'll put "1.5.2_Raidcraft". You should put the same for the little string that opens the code block, not the value for "name", the thing that comes JUST before that.<br>
+Now, set the name value to whatever you want. I'll just put "Raidcraft Classic" there.<br>
+There's one last important thing we need to set... "gameDir"! Note the double backslashes there? That's important. Just remember that for now.<br>
+Your modpack should come with a ".minecraft" folder inside, or equivalent. You should know enough about ".minecraft/" to know it contain all the assets, libraries, saves, and 'game stuff' Minecraft uses. The catch here, is the folder in the modpack may have all of the game assets, or only the modded assets. Lets assume your modpack has all the assets it needs to run. Put the mod's version of ".minecraft/" as a subfolder of your current, new ".minecraft/". I have ".minecraft/1.5.2_Raidcraft/".<br>
+So, Now that you've done that, copy the path to that folder. If you're on windows, it'll be something like this:<br>
+"C:\Users\&lt;user&gt;\AppData\Roaming\.minecraft\1.5.2_Raidcraft_Classic"<br>
+Notice how those are single slashes? Yeah, you'll want to change them to be double. If you're a Linux user, then I expect you'll figure out the differences easily enough.<br>
+<br>
+Done) That's right, you're done now! That wasn't so bad was it? Now you run the launcher and see if you messed up or not! Once the launcher is open, look in the bottom left corner and click on the version to change it. If you see "Raidcraft Classic", or whatever you put as the modpack name in "launcher_profiles.json", then you didn't mess up completely! Select it, and launch your modpack! If it runs, then good job! Go get another lemonade.<br>
+</p>
