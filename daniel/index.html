@@ -23,13 +23,15 @@
 	{name:'Daniel\'s Homepage', url:'#/home'},
 	{name:'Ambitions', url:'#/ambitions'},
 	{name:'Resume', url:'#/resume'},
+	{name:'RSS Feeds', url:'#/feeds'},
 	{name:'Projects', url:'#/projects', subgroup:[
 		{name:'Submersible Housing', url:'boatdev'},
 		{name:'Automated Agriculture', url:'autoagro'},
 		{name:'Freedom in Computing', url:'libreware'},
 		{name:'Mass Art Archiver', url:'bamboodl'},
 		{name:'About This Website', url:'thissite'},
-		{name:'Bamboodl', url:'bamboodl'}
+		{name:'Bamboodl', url:'bamboodl'},
+		{name:'Prequel Adventure VN', url:'prequelvn'}
 	]},
 	{name:'Music', url:'#/music', subgroup:[
 		{name:'Ableton', url:'ableton'}
@@ -41,15 +43,18 @@
 	{name:'IRC', url:'#/irc'}
 ];
 
-url_boatdev=links[4].url +'/'+ links[4].subgroup[0].url;
-url_autoagro=links[4].url +'/'+ links[4].subgroup[1].url;
-url_libreware=links[4].url +'/'+ links[4].subgroup[2].url;
-url_thissite=links[4].url +'/'+ links[4].subgroup[4].url;
+url_irc=links[8].url;
+url_boatdev=links[5].url +'/'+ links[5].subgroup[0].url;
+url_autoagro=links[5].url +'/'+ links[5].subgroup[1].url;
+url_libreware=links[5].url +'/'+ links[5].subgroup[2].url;
+url_thissite=links[5].url +'/'+ links[5].subgroup[4].url;
+url_bamboodl=links[5].url +'/'+ links[5].subgroup[5].url;
+url_prequelvn=links[5].url +'/'+ links[5].subgroup[6].url;
 ">
 
 	<div id='sidebar'>
 
-		<img id='sidebar-image' ng-src="/images/corner/stubborn.png" alt=" ~There was an image here, it's gone now~ " />
+		<img id='sidebar-image' ng-src="/images/corner/dj_brain.png" alt=" ~There was an image here, it's gone now~ " />
 		<!--
 		<p id='sidebar-text'>{{corner_text}}</p>
 		-->
@@ -61,7 +66,7 @@ url_thissite=links[4].url +'/'+ links[4].subgroup[4].url;
 			<a ng-href="{{group.url}}">{{group.name}}</a><br>
 
 		    <div class="animate-repeat" ng-repeat="subgroup in group.subgroup">
-		      <a ng-href="{{group.url}}/{{subgroup.url}}">{{subgroup.name}}</a><br>
+		      <a ng-href="{{group.url}}/{{subgroup.url}}" style="margin-left: 30px;">{{subgroup.name}}</a><br>
 		    </div>
 
 		</div>

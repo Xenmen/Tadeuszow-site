@@ -38,6 +38,10 @@ article {
   left: 350px;
 }
 
+h1 {
+  text-align: center;
+}
+
 p {
   margin: 00px 00px 30px 00px;
 }
