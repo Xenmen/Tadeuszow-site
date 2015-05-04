@@ -20,6 +20,9 @@ body {
   margin: 5px;
 }
 
+a:link {color: #FFBB00;}
+a:visited {color: #AA5500;}
+
 .text-body {
   position: absolute;
   left: 400px;
